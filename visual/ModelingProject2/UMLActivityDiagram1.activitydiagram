@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="d39991a6-99e4-4129-8c3d-412fe1ee6a6d" name="Activity1" linkedPackageId="a0ee014b-e5be-4a5f-a78d-a7c9df355050" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="9546fabd-de42-46cb-9a81-e288335bf05c">
+      <elementDefinition Id="8768c422-a461-4f80-bbef-803a47e625bb" />
+      <body>connection au site
+</body>
+    </comment>
+    <comment Id="366a39ff-6e8e-47b5-947a-8cd33b166cf2">
+      <elementDefinition Id="1cc99b99-6d21-47b4-8289-f8719d3bf060" />
+      <body>article disponible</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="7c62d5e2-a88c-4df3-9e6a-28209d088a32">
+      <profileInstance Id="7dcb9122-f348-47e2-80bb-61195ed619ec" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a59d3144-c045-4844-bbda-17ec3a1a4b03">
+      <profileInstance Id="f20b6433-387e-41a3-93d9-a69fb6c2e587" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="9fff18cd-ddd3-44ff-bc12-a8c88061af38" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="ee8e2c0f-14aa-45aa-8c62-91d9437ee162" />
+        <nodes>
+          <initialNode Id="db18e6fe-97f2-40b8-b7f0-81bdf03a8a1a" name="Initial1" isLeaf="false">
+            <elementDefinition Id="48750930-4f47-4c31-b7d5-a5b31712c6dc" />
+            <flowNodeTargets>
+              <controlFlow Id="2df18cd0-5e6a-42a0-b7d7-314ba7da5f87" isLeaf="false">
+                <opaqueActionMoniker Id="d8036a1e-a39f-4ca2-ba58-9104ac71e045" LastKnownName="creation du client dans la base" />
+                <elementDefinition Id="0e67edf8-c6f6-4590-bd99-2328d1cde149" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="9e2eefbf-8c72-4453-922b-65d4e1f0f1e7" name="selection article" isLeaf="false">
+            <elementDefinition Id="fffff700-3444-40e0-a87d-1152f4b04db0" />
+            <flowNodeTargets>
+              <controlFlow Id="a63ff4a9-f680-4717-a19a-559b9ce1fce8" isLeaf="false">
+                <opaqueActionMoniker Id="5e5b783c-bd3a-4a40-a784-df9e41ae2b34" LastKnownName="vérification  du paiment" />
+                <elementDefinition Id="886a0c2a-cb94-4640-b97c-e3676b00a332" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="83eaa450-bf03-4a67-ad18-595bdeabb97b" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="880c14df-0f7e-4f78-9527-05bcde4de5a6" />
+          </activityFinalNode>
+          <opaqueAction Id="9053103f-e578-4a5c-a11b-af35966adf61" name="interogation stock" isLeaf="false">
+            <elementDefinition Id="fdc13e22-25e5-440a-a086-102b033981fb" />
+            <flowNodeTargets>
+              <controlFlow Id="47cb9a5c-778e-48f2-b396-0d6387b42212" isLeaf="false">
+                <opaqueActionMoniker Id="9e2eefbf-8c72-4453-922b-65d4e1f0f1e7" LastKnownName="selection article" />
+                <elementDefinition Id="f6e09ada-57cb-400e-8bb4-f10830882c7f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5e5b783c-bd3a-4a40-a784-df9e41ae2b34" name="vérification  du paiment" isLeaf="false">
+            <elementDefinition Id="a200249c-ff00-47bd-9393-25419b31d616" />
+            <flowNodeTargets>
+              <controlFlow Id="589ed6e9-b989-4332-8dc5-7d7cb2b32e5b" isLeaf="false">
+                <opaqueActionMoniker Id="5362e8fa-9048-484b-981f-d47269ab0fc4" LastKnownName="validation commande" />
+                <elementDefinition Id="8f3bc7e6-a757-49d8-b1d4-9e66334a1182" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5362e8fa-9048-484b-981f-d47269ab0fc4" name="validation commande" isLeaf="false">
+            <elementDefinition Id="bb7f443c-e7a0-424d-83fc-5d6b31acff8f" />
+          </opaqueAction>
+          <opaqueAction Id="d8036a1e-a39f-4ca2-ba58-9104ac71e045" name="creation du client dans la base" isLeaf="false">
+            <elementDefinition Id="9e76fb31-9865-42e0-9855-bfb407550f60" />
+            <flowNodeTargets>
+              <controlFlow Id="abcb8100-da7b-4832-a526-f75a5ee07d06" isLeaf="false">
+                <opaqueActionMoniker Id="9053103f-e578-4a5c-a11b-af35966adf61" LastKnownName="interogation stock" />
+                <elementDefinition Id="9718b542-f657-4d76-9b75-33d5dc2f879d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="a0ee014b-e5be-4a5f-a78d-a7c9df355050" name="ModelingProject2">
+    <elementDefinition Id="eea30c78-0f49-4a53-875b-5ba75fd58996" />
+  </package>
+</activityRootModel>
