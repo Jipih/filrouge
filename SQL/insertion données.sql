@@ -36,18 +36,18 @@ set identity_insert Fournisseurs on
 
 go
 
-insert into Fournisseurs (Id_Fournisseur, Catalogue_Article)
-	values (22,'steinways catalogue 2015'),
-	       (11,'musiqua catalogue 2015'),
-	       (33,'mélodie 2015')
+insert into Fournisseurs (Id_Fournisseur, Nom_fournisseur, Catalogue_Article, Email_Fournisseur)
+	values (22,'sené musique','steinways catalogue 2015','sené@gmail.com'),
+	       (11,'sono musique','musiqua catalogue 2015','sono@gmail.com'),
+	       (33,'mélodie musique','mélodie 2015','mélodie@gmail.com')
 
 set identity_insert Fournisseurs off
 
 go
 --#insertion données fourni#--
 insert into fourni (Id_Fournisseur, Ref_Fournisseur)
-	values (22, '546544'),
-	       (11, '48764')			
+	values (22, 546544),
+	       (11, 48764)			
 
 --#insertion données clients#--
 set identity_insert Clients on

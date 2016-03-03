@@ -5,7 +5,9 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "fil rouge", "ModelingProject2\fil rouge.modelproj", "{F3125E4A-89D5-4B28-B7EB-B846DF692F42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{0EDBC5CB-560D-4094-AF38-4787816D2A14}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "WindowsFormsApplication1\GUI.csproj", "{0EDBC5CB-560D-4094-AF38-4787816D2A14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "ClassLibrary1\DAL.csproj", "{2DE49DA4-E56D-4FD2-8EF5-5EB898D0B4B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0EDBC5CB-560D-4094-AF38-4787816D2A14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EDBC5CB-560D-4094-AF38-4787816D2A14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EDBC5CB-560D-4094-AF38-4787816D2A14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DE49DA4-E56D-4FD2-8EF5-5EB898D0B4B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DE49DA4-E56D-4FD2-8EF5-5EB898D0B4B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DE49DA4-E56D-4FD2-8EF5-5EB898D0B4B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DE49DA4-E56D-4FD2-8EF5-5EB898D0B4B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

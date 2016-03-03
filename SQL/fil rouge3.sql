@@ -68,7 +68,9 @@ CREATE TABLE Clients(
 
 CREATE TABLE Fournisseurs(
         Id_Fournisseur    int  identity  NOT NULL ,
+		Nom_fournisseur varchar (400) not null,
         Catalogue_Article Varchar (400) NOT NULL ,
+		Email_Fournisseur Varchar (100) not null,
         PRIMARY KEY (Id_Fournisseur )
 )
 
