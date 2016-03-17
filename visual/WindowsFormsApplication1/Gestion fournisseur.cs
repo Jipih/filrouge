@@ -12,9 +12,9 @@ using System.Text.RegularExpressions;
 
 namespace WindowsFormsApplication1
 {
-    public partial class livraison : Form
+    public partial class livraisonWindow : Form
     {
-        public livraison()
+        public livraisonWindow()
         {
             InitializeComponent();
             MAJList();
@@ -69,7 +69,7 @@ namespace WindowsFormsApplication1
         public void textBox3_TextChanged(object sender, EventArgs e)
         {
 
-            Regex re = new Regex(strRegex);
+            Regex re = new Regex(strRegex); // change la couleur du textbox pour indiquer un mauvais format d'email
 
             if (re.IsMatch(textBox3.Text))
             {

@@ -46,52 +46,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="commande en cours.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="commande en cours.Designer.cs">
+      <DependentUpon>commande en cours.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="saisi de commande.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="saisi de commande.Designer.cs">
+      <DependentUpon>saisi de commande.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="accueil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="accueil.Designer.cs">
+      <DependentUpon>accueil.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
     </Compile>
-    <Compile Include="livraison.cs">
+    <Compile Include="outil recherche.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="livraison.Designer.cs">
-      <DependentUpon>livraison.cs</DependentUpon>
+    <Compile Include="outil recherche.Designer.cs">
+      <DependentUpon>outil recherche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion fournisseur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gestion fournisseur.Designer.cs">
+      <DependentUpon>Gestion fournisseur.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="commande en cours.resx">
+      <DependentUpon>commande en cours.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="saisi de commande.resx">
+      <DependentUpon>saisi de commande.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="accueil.resx">
+      <DependentUpon>accueil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="livraison.resx">
-      <DependentUpon>livraison.cs</DependentUpon>
+    <EmbeddedResource Include="outil recherche.resx">
+      <DependentUpon>outil recherche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gestion fournisseur.resx">
+      <DependentUpon>Gestion fournisseur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

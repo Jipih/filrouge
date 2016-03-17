@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication1
 {
-    partial class Form2
+    partial class accueil
     {
         /// <summary>
         /// Required designer variable.
@@ -41,6 +41,9 @@
             this.button6 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -101,6 +104,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = " Saisie commande";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -157,11 +161,43 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // Form2
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(258, 402);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(110, 65);
+            this.button8.TabIndex = 15;
+            this.button8.Text = "Gestion Fournisseurs";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(426, 402);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(110, 65);
+            this.button9.TabIndex = 16;
+            this.button9.Text = "Suivit CA";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(589, 402);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(110, 65);
+            this.button10.TabIndex = 17;
+            this.button10.Text = "commande en cours de livraison";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(980, 591);
+            this.Controls.Add(this.button10);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button6);
@@ -175,7 +211,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
-            this.Name = "Form2";
+            this.Name = "accueil";
             this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -197,5 +233,8 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
     }
 }

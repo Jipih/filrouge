@@ -48,6 +48,61 @@ namespace DAL
             requete.ExecuteNonQuery();
             con.Close();
         }
+
+        public List<livraison> Liv()
+        {
+            List<livraison> liste = new List<livraison>();
+
+            con.Open();
+
+            SqlCommand requete = new SqlCommand("select * from Livraison where Date_Livraison is null", con);
+
+            SqlDataReader resultat = requete.ExecuteReader();
+
+            while (resultat.Read())
+            {
+                livraison liv = new livraison();
+                liv.Bon_Livraison = Convert.ToInt32(resultat["Bon_Livraison"]);
+                liv.Liste_Produit = Convert.ToString(resultat["Liste_Produit"]);
+                liv.Adr_Livraison = Convert.ToString(resultat["Adr_Livraison"]);
+
+                liv.Date_Livraison = 0;
+                if (resultat["Date_Livraison"] != DBNull.Value)
+                {
+                    liv.Date_Livraison = Convert.ToInt32(resultat["Date_Livraison"]);
+                }
+
+                liste.Add(liv);
+            }
+            con.Close();
+            return liste;
+
+        }
+
+        //public  Livr()
+        //{
+        //    livraison li = new livraison();
+        //    int res = 0;
+        //    string res2 = "";
+        //    string res3= "";
+        //    int res4 = 0;
+        //    con.Open();
+
+        //    SqlCommand requete = new SqlCommand("select * from Livraison where Date_Livraison is null", con);
+
+        //    SqlDataReader resultat = requete.ExecuteReader();
+
+        //    while (resultat.Read())
+        //    {
+        //        res = Convert.ToInt32(resultat[0]);
+        //        res2 = Convert.ToString(resultat[0]);
+        //        res3 = Convert.ToString(resultat[0]);
+        //        res4 = Convert.ToInt32(resultat[0]);
+
+        //    }
+        //    con.Close();
+        //    return ;
+        //}
     }
 }
 
