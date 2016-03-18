@@ -14,7 +14,7 @@ namespace WindowsFormsApplication1
 {
     public partial class accueil : Form
     {
-        int res = 0;
+       
       
         public accueil()
         {
