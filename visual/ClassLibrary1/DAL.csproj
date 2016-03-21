@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="livr dao.cs" />
     <Compile Include="fournisseur.cs" />
     <Compile Include="fournisseur dao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
