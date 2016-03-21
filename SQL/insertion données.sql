@@ -84,7 +84,8 @@ go
 
 insert into Commande (Id_Commande, Adr_Commande, Adr_Facturation, Prix_vente, date_commande, Ref_Client, Numero_facture)
 	values (00111, '13 rue du bois 80000 amiens', '13 rue du bois 80000 amiens', 2550,'19/12/2015', 00555, 000111),
-		   (00022, '27 rue de l eglise 66600 le chaudron', '27 rue de l eglise 66600 le chaudron', 8750, '20/12/2015', 00666, 000222)
+		   (00022, '27 rue de l eglise 66600 le chaudron', '27 rue de l eglise 66600 le chaudron', 8750, '20/12/2015', 00666, 000222),
+		   (0033, '33 chemin du bout 44000 nantes', '33 chemin du bout 44000 nantes', 250, '03/03/2016', 00777, 00333)
 
 set identity_insert Commande off
 
@@ -98,7 +99,8 @@ go
 
 insert into Livraison (Bon_Livraison, Liste_Produit, Adr_Livraison, Date_Livraison)
 	values (001111, 'piano et accesoires', '13 rue du bois 80000 amiens', '24/12/2015'),
-		   (0022, 'guitare fender', '27 rue de l eglise 66600 le chaudron', '24/12/2015')
+		   (0022, 'guitare fender', '27 rue de l eglise 66600 le chaudron', '24/12/2015'),
+		   (00333, 'flute a bec', '33 chemin du bout 50000 cherbourg', null)
 
 set identity_insert Livraison off
 
@@ -108,7 +110,7 @@ go
 insert into est_propose (quantitee, Ref_Fournisseur, Id_Commande)
 	values (1, '546544', '00111'),
 		   (1, '48764', '00022')
-
+go
 --#insertion données gere #--
 --insert into gere(Id_Commande, Numero_facture)
 --	values (00111, 000111),
@@ -123,7 +125,8 @@ insert into est_propose (quantitee, Ref_Fournisseur, Id_Commande)
 --#insertion données declanche#--
 insert into Declenche (Id_Commande, Bon_Livraison)
 	values (00111, 001111),
-		   (00111, 00022)
+		   (00111, 00022),
+		   (0033, 00333)
 
 
 go 

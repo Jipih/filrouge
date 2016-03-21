@@ -20,7 +20,7 @@ namespace WindowsFormsApplication1
             MAJList();
         }
 
-        string strRegex = @"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}" +
+        string strRegex = @"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}" +//le regex qui vérifie la validité des emails
                 @"\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\" +
                 @".)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$";
         public void button1_Click(object sender, EventArgs e)
