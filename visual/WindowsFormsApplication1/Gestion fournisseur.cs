@@ -81,5 +81,39 @@ namespace WindowsFormsApplication1
             }
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            Regex re_nom = new Regex(@"^[a-z]{2,30}$"); // vérifie que la nom a le bon format
+
+
+            if (re_nom.IsMatch(textBox2.Text))
+            {
+                textBox2.BackColor = Color.LightGreen;  // couleur du cadre passe en vert si ok
+                label1.Visible = false;
+            }
+            else
+            {
+                textBox2.BackColor = Color.Red; // couleur du cadre passe en rouge si caractere ou format interdit
+                label1.Visible = true;
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            Regex re_nom = new Regex(@"^[a-z]{2,30}$"); // vérifie que la nom a le bon format
+
+
+            if (re_nom.IsMatch(textBox2.Text))
+            {
+                textBox2.BackColor = Color.LightGreen;  // couleur du cadre passe en vert si ok
+                label1.Visible = false;
+            }
+            else
+            {
+                textBox2.BackColor = Color.Red; // couleur du cadre passe en rouge si caractere ou format interdit
+                label1.Visible = true;
+            }
+        }
     }
 }
