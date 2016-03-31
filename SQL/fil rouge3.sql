@@ -1,5 +1,7 @@
 use master
 
+go
+
 drop database shop
 
 go
@@ -30,7 +32,7 @@ CREATE TABLE rubrique(
         sous_rubrique Varchar (50) references Sous_Rubrique(Sous_Rubrique)  NOT NULL ,
 )
 
-
+go
 --#------------------------------------------------------------
 --#-- Table: Produit
 --#------------------------------------------------------------
@@ -45,7 +47,7 @@ CREATE TABLE Produit(
         rubrique        Varchar (100) references rubrique(rubrique) NOT NULL ,
         PRIMARY KEY (Ref_Fournisseur )
 )
-
+go
 
 --#------------------------------------------------------------
 --#-- Table: Clients
@@ -53,15 +55,17 @@ CREATE TABLE Produit(
 
 CREATE TABLE Clients(
         Ref_Client   int Identity  NOT NULL ,
-        Client_Par   Varchar (100) NOT NULL ,
-        Client_Pro   Varchar (100) NOT NULL ,
-        Adresse      Varchar (100) ,
-        Nom_Client   Varchar (50) ,
-        Ville_Client Varchar (50) ,
-        Code_postal  Int ,
+        Client_Par   bit   ,
+        Client_Pro   bit   ,
+		Nom_Client   Varchar (50),
+		Prenom_Client Varchar (50),
+        Adresse_Client Varchar (100),
+        Ville_Client Varchar (50),
+        Code_Postal_Client  Int,
+		Email_Client varchar (100),
         PRIMARY KEY (Ref_Client )
 )
-
+go
 --#------------------------------------------------------------
 --#-- Table: Fournisseurs
 --#------------------------------------------------------------
@@ -74,7 +78,7 @@ CREATE TABLE Fournisseurs(
         PRIMARY KEY (Id_Fournisseur )
 )
 
-
+go
 --#------------------------------------------------------------
 --#-- Table: Facturation
 --#------------------------------------------------------------
@@ -87,7 +91,7 @@ CREATE TABLE Facturation(
         Date_facturation Date ,
         PRIMARY KEY (Numero_facture )
 )
-
+go
 --#------------------------------------------------------------
 --#-- Table: Commande
 --#------------------------------------------------------------
@@ -103,7 +107,7 @@ CREATE TABLE Commande(
         PRIMARY KEY (Id_Commande )
 )
 
-
+go
 
 --#------------------------------------------------------------
 --#-- Table: Livraison
@@ -118,7 +122,7 @@ CREATE TABLE Livraison(
 )
 
 
-
+go
 
 
 --#------------------------------------------------------------
@@ -131,7 +135,7 @@ CREATE TABLE fourni(
         PRIMARY KEY (Id_Fournisseur ,Ref_Fournisseur )
 )
 
-
+go
 --#------------------------------------------------------------
 --#-- Table: est proposé
 --#------------------------------------------------------------
@@ -144,7 +148,7 @@ CREATE TABLE est_propose(
         PRIMARY KEY (Ref_Fournisseur ,Id_Commande )
 )
 
-
+go
 --#------------------------------------------------------------
 --#-- Table: Déclenche
 --#------------------------------------------------------------
@@ -154,7 +158,7 @@ CREATE TABLE Declenche(
         Bon_Livraison Int references Livraison(Bon_Livraison)NOT NULL ,
         PRIMARY KEY (Id_Commande ,Bon_Livraison )
 )
-
+go
 --#------------------------------------------------------------
 --# Table: se compose
 --#------------------------------------------------------------
@@ -166,3 +170,4 @@ CREATE TABLE se_compose(
         PRIMARY KEY (Bon_Livraison ,Ref_Fournisseur )
 )
 
+go

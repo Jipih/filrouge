@@ -45,5 +45,21 @@ namespace WindowsFormsApplication1
             f.Show();
            
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form f = new home();
+            f.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

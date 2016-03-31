@@ -45,6 +45,7 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -131,8 +132,9 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(110, 65);
             this.button5.TabIndex = 11;
-            this.button5.Text = "base article";
+            this.button5.Text = "catalogue";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -180,6 +182,7 @@
             this.button9.TabIndex = 16;
             this.button9.Text = "Suivit CA";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -201,11 +204,22 @@
             this.label5.TabIndex = 18;
             this.label5.Text = "©greenvillage";
             // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(847, 43);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(85, 23);
+            this.button11.TabIndex = 19;
+            this.button11.Text = "Deconnection";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
             // accueil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(980, 591);
+            this.Controls.Add(this.button11);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
@@ -249,5 +263,6 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button11;
     }
 }

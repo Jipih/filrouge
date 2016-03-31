@@ -54,11 +54,11 @@ set identity_insert Clients on
 
 go
 
-insert into Clients (Ref_Client, Client_Par, Client_Pro, Adresse)
-	values (00555, 'par', 'N/A', '13 rue du bois 80000 amiens'),
-		   (00666, 'N/A', 'pro', '27 rue de l eglise 66600 le chaudron'),
-		   (00777, 'par', 'N/A', '33 chemin du bout 44000 nantes')
-
+insert into Clients (Ref_Client, Client_Par, Client_Pro, Nom_Client, Prenom_Client, Adresse_Client, Ville_Client, Code_Postal_Client, Email_Client)
+	values (00555, 1, 0, 'Dupont', 'Pierre', '13 rue du bois', 'amiens', 80000, 'pierre.dupont@free.fr'),
+		   (00666, 0, 1, 'Valjean', 'Jean', '27 rue de l eglise', 'le chaudron', 66600, 'jean.valjean@cosette.com'),
+		   (00777, 1, 0, 'Skywalker', 'luc', '33 chemin du bout', 'nantes', 44000, 'luc.skywalker@tatoine.com')
+		  
 set identity_insert Clients off
 
 go

@@ -115,5 +115,10 @@ namespace WindowsFormsApplication1
                 label1.Visible = true;
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
